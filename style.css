@@ -1,0 +1,193 @@
+/*Sets defaults for the web page*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Verdana', sans-serif;
+	/*box-sizing: border-box;*/
+	background: #FEFEFF;
+}
+/*Container for responsive design*/
+#wrapper{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	padding: 5px;
+	/*width: 80%;
+	min-width: 720px;
+	max-width: 1920px;
+	height: 90%;
+	min-height: 480px;
+	max-height: 1080px;*/
+	width: 99.5%;
+	height: 99%;
+	background: #390D55;
+}
+/*Styling for the header element*/
+header{
+	margin-bottom: 10px;
+	height: 75px;
+	border: solid #C9C750 2px;
+}
+
+header, nav, footer{background: #693A87;}
+
+h1{
+	text-align: center;
+}
+/*Sets the font family for all headers*/
+h1, h2, h3, h4{
+	font-family: 'Droid Serif', serif;
+	color: #C9C750;
+}
+/*Navigation styling begins*/
+nav{
+	width: 135px;
+	height: 83%;
+	float: left;
+	border: solid #C9C750 2px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	margin-bottom: 24px;
+}
+
+a{
+	text-decoration: none;
+	color: #F5F48D;
+}
+
+a:hover{
+	background: #C9C750;
+	color: #693A87;	
+}
+
+/* Mobile Dropdown */
+	.drop{
+		display: none;
+		width: 125px;
+	}
+	
+	.drop:hover{
+		cursor: pointer;
+	}
+
+	.drop:hover .mobile{
+		display: block;
+	}
+	
+	.mobile{
+		display: none;
+		position: relative;
+		height: 150px;
+	}
+/*Navigation styling ends*/
+
+/*Sets style rules for the article displays*/
+#main_content{
+	margin: 0 20px;
+	width: 75%;
+	height: 83%;
+	float: left;
+	background: #8B62A4;
+	border: solid #C9C750 2px;
+}
+
+
+
+#art_wrapper{
+	display: inline-block;
+	margin: 0 5px;
+	width: 48%;
+	height: 89%;
+	overflow: auto;
+}
+
+table{
+	background: #FEFEFF;
+	border-collapse: collapse;
+}
+
+th, td{
+	width: 65px;
+}
+
+table, th, tr, td{
+	padding: 2px;
+	text-align: center;
+	border: solid black 1px;
+}
+
+section {
+	margin: 5px;
+	text-align: left;
+	letter-spacing: 1px;
+	font-size: 1em;
+}
+
+aside{
+	display: inline;
+	margin: 0 5px;
+	width: 48%;
+	height: 100%;
+	float: right;
+}
+
+footer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 5px;
+	margin-top: 10px;
+	clear: left;
+	height: 50px;
+	border: solid #C9C750 2px;
+}
+
+.soc_media{
+	margin: 5px auto;
+	float: left;
+}
+
+.soc_media li{
+	margin: 5px;
+	display: inline;
+	width: 48%;
+}
+
+footer p{
+	display: flex;
+	margin-right: 50px;
+	float: right;
+	color: #FFF;
+}
+
+/*|| Mobile Layout ||*/
+@media only screen and (max-width: 768px) {
+	#wrapper{
+		width: 98.5%;
+		height: 99%;
+	}
+	
+	#sidenav{
+		display: none;
+	}
+	
+	#main_content{
+		width: 94%;
+	}
+	
+	.drop{
+		display: block;
+	}
+}
+	
+	
+	
